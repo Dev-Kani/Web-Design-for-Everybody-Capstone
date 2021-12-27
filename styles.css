@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(212, 211, 211);
+  font-family: "Roboto", sans-serif;
+  color: #2d81e0;
+}
+
+.mytabs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 10px auto 0 auto;
+  max-width: 1024px;
+}
+
+@media screen and (min-width: 768px) {
+  .mytabs {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.mytabs > label:nth-child(2) {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.mytabs input[type="radio"] {
+  display: none;
+}
+
+.mytabs label {
+  padding: 14px 52px;
+  background: #e2e2e2;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .mytabs label {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+.mytabs label:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.mytabs .tab {
+  width: 100%;
+  padding: 0;
+  background: #fff;
+  order: 1;
+  display: none;
+}
+
+.mytabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+  background: #fff;
+}
+
+.tab {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 0;
+}
+
+/* Home Section */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page-texts :first-child {
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  margin: 1rem 0 0.2rem 0;
+}
+
+.home-page-texts :nth-child(2) {
+  text-align: center;
+  font-size: 25px;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+
+.home-page-texts :nth-child(3) {
+  margin: 0 0 1rem 0;
+}
+
+.home-page-img img {
+  width: 96%;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .home-page {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .home-page-texts :first-child {
+    font-size: calc(1vw + 4rem);
+  }
+  .home-page-texts :nth-child(2) {
+    font-size: 30px;
+  }
+  .home-page-texts :nth-child(3) {
+    font-size: 30px;
+  }
+  .home-page-img img {
+    width: 100%;
+    max-width: 350px;
+    margin: 2rem 0;
+  }
+}
+
+/* Bio Section */
+
+.bio-tab > div > p {
+  width: 90%;
+  text-align: left;
+  color: #000;
+  line-height: 1.6rem;
+  margin: 1.5rem 0 1rem 1rem;
+}
+
+.bio-tab {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* padding: 0 1rem; */
+  margin: 0 0 5rem 0;
+}
+
+.bio-tab-img :first-child {
+  width: 12rem;
+  position: absolute;
+  margin: 8rem 0 0 0;
+  border-radius: 10px;
+}
+.bio-tab-img :nth-child(2) {
+  width: 16rem;
+  padding: 0 0 0 4rem;
+  /* position: relative; */
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .bio-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  .bio-tab-img {
+    margin: 3rem 0 0 0;
+  }
+  .bio-tab > div > p {
+    width: 70%;
+    font-size: 18px;
+    line-height: 1.9rem;
+    margin: 4rem 0 0 4rem;
+  }
+
+  
+}
+
+/* Education */
+
+/* .edu-cards {
+  display: flex;
+} */
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 15px;
+  padding: 15px 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-header > div > img {
+  /* display: flex; */
+  width: 90%;
+  max-width: 6rem;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+}
+
+.card-body h2 {
+  font-size: 22px;
+  color: #000;
+} 
+
+.card-body h3 {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.card-body ul {
+  margin: 13px 0 10px 5px;
+  /* text-align: center; */
+  list-style-position: inside;
+}
+
+.card-body ul li {
+  font-size: 14px;
+  text-align: start;
+  margin: 5px 0 0 30px;
+  color: #000;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 8px ;
+}
+
+.skill-tags > h5 {
+  background-color: #E5E5E5;
+  padding: 4px 18px;
+  border-radius: 10px;
+  
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    /* justify-content: center; */
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  .card-header {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .card-body {
+    text-align: left;
+    align-items: center;
+  }
+}
+
+/* Skills */
+
+.skill-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skill-sections {
+  width: 90%;
+  max-width: 400px;
+  margin: 1rem auto;
+  border: 1px solid #2d81e0;
+  border-radius: 10px;
+  padding: 0 0 2rem 0;
+}
+
+
+
+.skills-header > h2 {
+  text-align: center;
+  color: #000;
+  margin: 1rem 0 0 0;
+}
+
+.skills-header > div {
+  width: 60px;
+  height: 3px;
+  background-color: #2d81e0;
+  margin: 0 auto 15px auto;
+}
+
+progress {
+  border-radius: 7px; 
+  width: 80%;
+  height: 5px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: lightgrey;
+
+}
+
+progress::-webkit-progress-value {
+  background-color: #2d81e0;
+}
+
+.progress-bras > label {
+  color: #000;
+  font-size: 13px;
+  padding: 0;
+  background-color: #fff;
+  text-align: left;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .skill-cards {
+    flex-direction: row;
+  }
+  .skill-sections {
+    margin: 2rem 3rem;
+    padding: 0 0rem 1rem 0;
+  }
+}
+
+/* Project Section */
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-card {
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #2d81e0;
+  margin: 1rem auto 1rem auto;
+  border-radius: 14px;
+  padding: 0 0 1rem 0;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 14px;
+  margin: 0 0 10px 0;
+}
+
+.project-card-body {
+  padding: 0 0.6rem;
+}
+
+.project-card-body a, h4, p {
+  color: #000;
+  padding: 6px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .project-cards {
+    flex-direction: row;
+  }
+  .project-card {
+    margin: 2rem 2rem;
+  }
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Tabs</title>
+</head>
+<body>
+  <div class="mytabs">
+    <input type="radio" id="home" name="mytabs" checked="checked">
+    <label for="home" class="">Home</label>
+    <div class="tab">
+      <div class="home-page">
+        <div class="home-page-texts">
+          <h3>Hello,</h3>
+          <h3>I'm Kevin Gerry.</h3>
+          <h3>I'm a Full Stack Web Developer</h3>
+        </div>
+        <div class="home-page-img">
+          <img src="./images/Elon_Musk_Royal_Society.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <input type="radio" id="bio" name="mytabs" >
+    <label for="bio">Bio</label>
+    <div class="tab">
+      <section class="bio-tab">
+        <div>
+          <p>I was born in Manchester, United Kindom. I still live in the same city. I love to do computer related stuff most of the time. I spend most of my day doing UI/UX designing. I like to walk in the city and relax near the river or spend the time in Metaverse when I’m free.</p>
+        </div>
+        <div>
+          <div class="bio-tab-img">
+            
+              <img src="/images/Irwell-in-manchester.webp" alt="Irwell river in Manchester">
+            
+            
+              <img src="./images/metaverse.jpg" alt="metaverse">
+            
+          </div>
+        
+        </div>
+      </section>
+    </div>
+
+    <input type="radio" id="education" name="mytabs">
+    <label for="education" >Education</label>
+    <div class="tab">
+      
+        <div class="card-container">
+          <div class="card-header">
+            <div>
+              <img src="./images/coursera-logo.png" alt="coursera logo">
+            </div>
+            <div>
+              <img src="./images/Uni_of_Michigan.png" alt="coursera logo">
+            </div>
+          </div>
+          <div class="card-body">
+            <h2>Web Design for Everybody Specialization</h2>
+            <h3>University of Michigan on Coursera</h3>
+            <ul>
+              <li>Introduction to HTML5</li>
+              <li>Introduction to CSS3</li>
+              <li>Interactivity with JavaScript</li>
+              <li>Advanced Styling with Responsive Design</li>
+              <li>Web Design for Everybody Capstone</li>
+            </ul>
+            <div class="skill-tags">
+              <h5>HTML5</h5>
+              <h5>CSS3</h5>
+              <h5>jQuery</h5>
+              <h5>Bootstrap</h5>
+              <h5>JavaScript</h5>
+            </div>
+          </div>
+          
+        </div>
+        <div class="card-container">
+          <div class="card-header">
+            <div>
+              <img src="./images/coursera-logo.png" alt="coursera logo">
+            </div>
+            <div>
+              <img src="./images/uni_of_london.svg.png" alt="coursera logo">
+            </div>
+          </div>
+          <div class="card-body">
+            <h2>Responsive Website Development and Design Specialization</h2>
+            <h3>University of London, Goldsmiths on Coursera</h3>
+            <ul>
+              <li>Responsive Website Basics: Code with HTML, CSS, and JavaScript</li>
+              <li>Responsive Web Design</li>
+              <li>Introduction to Meteor.js Development</li>
+              <li>Web Application Development with JavaScript and MongoDB</li>
+              <li>Responsive Website Tutorial and Examples</li>
+              <li>Responsive Website Development and Design Capstone</li>
+            </ul>
+            <div class="skill-tags">
+              <h5>HTML5</h5>
+              <h5>CSS3</h5>
+              <h5>jQuery</h5>
+              <h5>Bootstrap</h5>
+              <h5>MongoDB</h5>
+              <h5>Meteor</h5>
+              <h5>APIs</h5>
+            </div>
+          </div>
+          
+        </div>
+      
+    </div>  
+
+
+    <input type="radio" id="skills" name="mytabs">
+    <label for="skills">Skills</label>
+    <div class="tab">
+      <div class="skill-cards">
+        <section class="skill-sections">
+          <div class="skills-header">
+            <h2>Front End</h2>
+            <div></div>
+          </div>
+          <div class="progress-bras">
+            <label for="HTML5">HTML5</label><br>
+            <progress id="HTML5" value="85" max="100"></progress><br>
+            <label for="CSS3">CSS3</label><br>
+            <progress id="CSS3" value="84" max="100"></progress><br>
+            <label for="JavaScript">JavaScript</label><br>
+            <progress id="JavaScript" value="80" max="100"></progress><br>
+            <label for="Bootstrap">Bootstrap</label><br>
+            <progress id="Bootstrap" value="70" max="100"></progress><br>
+            <label for="jQuery">jQuery</label><br>
+            <progress id="jQuery" value="60" max="100"></progress><br>
+            <label for="Version-Control">Version Control with Git</label><br>
+            <progress id="Version-Control" value="70" max="100"></progress><br>
+            <label for="Web-Performance">Web Performance Optimization</label><br>
+            <progress id="Web-Performance" value="90" max="100"></progress><br>
+            <label for="Responsive-Web">Responsive Web Design</label><br>
+            <progress id="Responsive-Web" value="85" max="100"></progress><br>
+            <label for="Testing">Testing and Debugging</label><br>
+            <progress id="Testing" value="70" max="100"></progress><br>
+          </div>
+        </section>
+        
+        <section class="skill-sections">
+          <div class="skills-header">
+            <h2>Back End</h2>
+            <div></div>
+          </div>
+          <div class="progress-bras">
+            <label for="Laravel">PHP & Laravel</label><br>
+            <progress id="Laravel" value="85" max="100"></progress><br>
+            <label for="Express">Node.js & Express</label><br>
+            <progress id="Express" value="84" max="100"></progress><br>
+            <label for="PostgreSQL">MySQL, PostgreSQL, MariaDB</label><br>
+            <progress id="PostgreSQL" value="80" max="100"></progress><br>
+            <label for="MongoDB">MongoDB</label><br>
+            <progress id="MongoDB" value="70" max="100"></progress><br>
+            <label for="APIs">APIs(REST, JSON APIs)</label><br>
+            <progress id="APIs" value="60" max="100"></progress><br>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <input type="radio" id="projects" name="mytabs">
+    <label for="projects">Projects</label>
+    <div class="tab">
+      <section class="project-cards">
+        <div class="project-card">
+          <img src="./images/coursera-screenshot.png" alt="">
+          <div class="project-card-body">
+            <h3>Massive Online Learning Platform</h3>
+            <h4>Used Technologies :</h4>
+            <p>Angular, ASP.NET, Wordpress</p>
+            <h5><a href="#">View Project</a></h5>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/e-commerce.png" alt="">
+          <div class="project-card-body">
+            <h3>Fully Functional E-commerce Website</h3>
+            <h4>Used Technologies :</h4>
+            <p>React, Node.js, Redux, Wordpress</p>
+            <h5><a href="#">View Project</a></h5>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+  
+
+  <script src="./JavaScript/scripts.js"></script>
+</body>
+</html>
